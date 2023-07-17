@@ -32,7 +32,7 @@
 #define BLUEFRUIT_SPI_MOSI             11
 
 
-// Constants for the servo pin
+// Constant for the servo pin
 #define SERVO_PIN 9
 
 //Define the objects which are the bluetooth module and the servo
