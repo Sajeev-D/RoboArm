@@ -31,15 +31,9 @@
 #define BLUEFRUIT_SPI_MISO             12
 #define BLUEFRUIT_SPI_MOSI             11
 
-// constants for factory reset
 
-    #define MINIMUM_FIRMWARE_VERSION    "0.6.6"
-    #define MODE_LED_BEHAVIOUR          "MODE"
-
-// Constants for the servo
-#define SERVO_PIN 9  // The servo pin connected to the Feather board
-#define SERVO_MAX_SPEED_1 0  // max speed in one direction for the servo
-#define SERVO_MAX_SPEED_2 180  // max speed in the other direction for the servo
+// Constants for the servo pin
+#define SERVO_PIN 9
 
 //Define the objects which are the bluetooth module and the servo
 
@@ -57,7 +51,7 @@ void setup(void)
   //attach the servo to pin 9
   myServo.attach(SERVO_PIN);
 
-//check to see if a serial communication was established between the MCU and the phone
+//check to see if a serial communication was established
   while (!Serial);
   delay(500);
 
